@@ -1,0 +1,6 @@
+<ul class="list_group d-flex flex-column justify-content-center col-4 mt-5 p-0">
+<% @articles.each do |article| %>
+<div class="m-4 mt-2 mb-1 fs-2"><%= link_to article.title, article_path(article) , class: "p-0 text-decoration-none text-reset"%></div>
+<p><%= article.content %></p>
+<% end %>
+</ul>
